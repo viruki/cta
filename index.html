@@ -5,11 +5,7 @@
   <title>Guia GGMAX — Comece a Vender do Zero</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <style>
     * {
@@ -20,9 +16,8 @@
     }
 
     body {
-      background: #0f0f0f;
+      background: #0b0b0b;
       color: #eaeaea;
-      line-height: 1.6;
     }
 
     .container {
@@ -33,23 +28,23 @@
 
     h1, h2, h3 {
       color: #fff;
+      text-align: center;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       margin-bottom: 20px;
-      text-align: center;
     }
 
     h2 {
+      font-size: 1.9rem;
       margin: 60px 0 20px;
-      font-size: 1.8rem;
-      text-align: center;
     }
 
     p {
-      margin-bottom: 15px;
       color: #cfcfcf;
+      margin-bottom: 15px;
+      text-align: center;
     }
 
     .highlight {
@@ -57,27 +52,44 @@
       font-weight: bold;
     }
 
+    /* HERO */
     .hero {
+      background: linear-gradient(180deg, #121212, #080808);
+      border-radius: 14px;
+      padding: 60px 25px;
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(180deg, #121212, #0a0a0a);
-      border-radius: 12px;
     }
 
-    .price {
-      font-size: 2rem;
-      margin: 20px 0;
+    .benefits {
+      margin: 25px 0;
+      line-height: 1.8;
+    }
+
+    .price-box {
+      margin: 25px 0;
+    }
+
+    .old-price {
+      color: #888;
+      text-decoration: line-through;
+      font-size: 1.2rem;
+    }
+
+    .new-price {
+      font-size: 2.6rem;
       color: #00ff88;
+      font-weight: bold;
     }
 
     .btn {
       display: inline-block;
-      padding: 16px 30px;
+      margin-top: 20px;
+      padding: 18px 34px;
       background: #00ff88;
       color: #000;
-      text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
+      text-decoration: none;
+      border-radius: 10px;
       transition: 0.2s;
     }
 
@@ -85,17 +97,17 @@
       background: #00cc6e;
     }
 
+    /* BOX */
     .box {
-      background: #161616;
-      padding: 25px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      background: #141414;
       border: 1px solid #222;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
     }
 
     ul {
       list-style: none;
-      margin-top: 10px;
     }
 
     ul li {
@@ -105,24 +117,20 @@
     ul li::before {
       content: "✔";
       color: #00ff88;
-      margin-right: 10px;
+      margin-right: 8px;
     }
 
-    /* ===== PROVAS SOCIAIS ===== */
+    /* SWIPER */
     .swiper {
-      width: 100%;
       padding: 40px 0;
     }
 
     .swiper-slide {
-      background: #000;
-      border-radius: 12px;
-      overflow: hidden;
       width: 260px;
       height: 460px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #000;
+      border-radius: 14px;
+      overflow: hidden;
       border: 2px solid #222;
     }
 
@@ -132,11 +140,12 @@
       object-fit: cover;
     }
 
+    /* FOOTER */
     .footer {
       text-align: center;
       margin-top: 60px;
-      font-size: 0.9rem;
-      color: #888;
+      font-size: 0.85rem;
+      color: #777;
     }
   </style>
 </head>
@@ -146,47 +155,47 @@
 
   <!-- HERO -->
   <div class="hero">
-    <h1>Guia GGMAX — Comece a Vender do Zero Mesmo Sem Divulgação</h1>
-    <p>Aprenda como pessoas comuns estão vendendo na GGMAX usando <span class="highlight">estratégia real</span>.</p>
+    <h1>Guia GGMAX</h1>
+    <p>Aprenda como <span class="highlight">pessoas comuns</span> estão começando a vender na GGMAX sem gastar com anúncios.</p>
 
-    <p>
-      📦 Fornecedor incluso<br>
-      👥 Clientes sem anúncio<br>
-      ⚡ Passo a passo simples<br>
-      🔓 Acesso imediato
-    </p>
+    <div class="benefits">
+      📦 Fornecedor pronto<br>
+      👥 Clientes sem divulgação paga<br>
+      💰 Precificação correta<br>
+      ⚡ Acesso imediato
+    </div>
 
-    <div class="price">R$ 15,99</div>
+    <div class="price-box">
+      <div class="old-price">R$ 15,99</div>
+      <div class="new-price">R$ 7,99</div>
+      <p>Oferta por tempo limitado</p>
+    </div>
 
     <a href="https://pay.kiwify.com.br/NDD8IOm" class="btn">
-      QUERO ACESSAR O GUIA
+      ACESSAR O GUIA AGORA
     </a>
   </div>
 
   <!-- PROBLEMA -->
-  <h2>Você se identifica com isso?</h2>
+  <h2>Isso está te travando?</h2>
   <div class="box">
     <ul>
-      <li>Não sabe por onde começar na GGMAX</li>
-      <li>Não tem fornecedor confiável</li>
-      <li>Não sabe onde achar clientes</li>
+      <li>Não sabe como começar na GGMAX</li>
+      <li>Medo de cair em golpe com fornecedor</li>
+      <li>Dificuldade em achar clientes</li>
       <li>Não quer gastar com anúncios</li>
     </ul>
   </div>
 
-  <!-- PROVAS SOCIAIS -->
-  <h2>Pessoas que já estão aplicando o método</h2>
-  <p style="text-align:center;">
-    Resultados reais de quem colocou em prática.
-  </p>
+  <!-- PROVAS -->
+  <h2>Quem já aplicou o método</h2>
+  <p>Resultados reais de pessoas que começaram do zero.</p>
 
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <!-- TROQUE AS IMAGENS AQUI -->
-      <div class="swiper-slide"><img src="Image.jpeg"></div>
+    <div class="swiper-slide"><img src="Image.jpeg"></div>
       <div class="swiper-slide"><img src="WhatsApp 2026-01-16 at 16.06.30.jpeg"></div>
       <div class="swiper-slide"><img src="WhatsApp Image 2026-01-16 at 16.06.30.jpeg"></div>
-    
     </div>
   </div>
 
@@ -194,23 +203,23 @@
   <h2>O que você vai aprender</h2>
 
   <div class="box">
-    <h3>📦 Fornecedor pronto</h3>
-    <p>Fornecedor incluso no guia, evitando golpes e perda de tempo.</p>
+    <h3>📦 Fornecedor confiável</h3>
+    <p>Evite golpes e comece com um fornecedor já validado.</p>
   </div>
 
   <div class="box">
-    <h3>👥 Clientes sem divulgação</h3>
-    <p>Onde encontrar pessoas prontas pra comprar e como abordar corretamente.</p>
+    <h3>👥 Onde achar clientes</h3>
+    <p>Locais e estratégias para encontrar compradores sem anúncios.</p>
   </div>
 
   <div class="box">
-    <h3>💰 Preço e lucro</h3>
-    <p>Como calcular preços e entender taxas da GGMAX sem confusão.</p>
+    <h3>💰 Lucro e taxas</h3>
+    <p>Como precificar corretamente mesmo com as taxas da GGMAX.</p>
   </div>
 
   <!-- CTA FINAL -->
   <div class="hero">
-    <h2>Comece hoje por menos de R$16</h2>
+    <h2>Comece hoje por R$ 7,99</h2>
     <p>Acesso imediato ao guia completo.</p>
     <a href="https://pay.kiwify.com.br/NDD8IOm" class="btn">
       GARANTIR MEU ACESSO
@@ -223,7 +232,6 @@
 
 </div>
 
-<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   new Swiper(".mySwiper", {
@@ -233,9 +241,7 @@
     slidesPerView: "auto",
     coverflowEffect: {
       rotate: 30,
-      stretch: 0,
       depth: 150,
-      modifier: 1,
       slideShadows: false,
     },
     loop: true,
